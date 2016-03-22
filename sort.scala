@@ -11,8 +11,8 @@ object Sort {
         }
     }
     def main(args: Array[String]): Unit = {
-      val z: Array[Int] = Array(8, 5, 4, 1, 16, 20, 100, 70)
-      println(sort(z))
+        val z: Array[Int] = Array.fill(10){scala.util.Random.nextInt(100)}
+        print(sort(z).mkString(" ") + "\n")
     }
 
 }
